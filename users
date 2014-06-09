@@ -1,0 +1,72 @@
+USERS
+
+{email: "ken.pickering@gmail.com",
+type: "payer",
+cert: "-----BEGIN CERTIFICATE-----
+MIIBuTCCASKgAwIBAgIQNdNhtuV5GbNHYZsf+LvM0zANBgkqhkiG9w0BAQUFADAb
+MRkwFwYDVQQDExBFZGlkZXYgU21va2VUZXN0MB4XDTA4MTExMjE5NTEzNVoXDTM5
+MTIzMTIzNTk1OVowGzEZMBcGA1UEAxMQRWRpZGV2IFNtb2tlVGVzdDCBnzANBgkq
+hkiG9w0BAQEFAAOBjQAwgYkCgYEAm6zGzqxejwswWTNLcSsa7P8xqODspX9VQBuq
+5W1RoTgQ0LNR64+7ywLjH8+wrb/lB6QV7s2SFUiWDeduVesvMJkWtZ5zzQyl3iUa
+CBpT4S5AaO3/wkYQSKdI108pXH7Aue0e/ZOwgEEX1N6OaPQn7AmAB4uq1h+ffw+r
+RKNHqnsCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCZmj+pgRsN6HpoICawK3XXNAmi
+cgfQkailX9akIjD3xSCwEQx4nG6tZjTz30u4NoSffW7pch58SxuZQDqW5NsJcQNq
+Ngo/dMoqqpXdi2/0BYEcJ8pjsngrFm+fM2BnyGpXH7aWuKsWjVFGlWlF+yi8I35Q
+8wFJt2Z/XGA7WWDjvw==
+-----END CERTIFICATE-----",
+accounts: "Paypal, VISA, American Express, Square, Amazon, Google, Circle (Bitcoin)",
+preferred_account: "Amazon"}
+
+{email: "tyson.kopczynski@taosage.net",
+type: "payer",
+cert: "-----BEGIN CERTIFICATE-----
+MIIBuTCCASKgAwIBAgIQNdNhtuV5GbNHYZsf+LvM0zANBgkqhkiG9w0BAQUFADAb
+MRkwFwYDVQQDExBFZGlkZXYgU21va2VUZXN0MB4XDTA4MTExMjE5NTEzNVoXDTM5
+MTIzMTIzNTk1OVowGzEZMBcGA1UEAxMQRWRpZGV2IFNtb2tlVGVzdDCBnzANBgkq
+hkiG9w0BAQEFAAOBjQAwgYkCgYEAm6zGzqxejwswWTNLcSsa7P8xqODspX9VQBuq
+5W1RoTgQ0LNR64+7ywLjH8+wrb/lB6QV7s2SFUiWDeduVesvMJkWtZ5zzQyl3iUa
+CBpT4S5AaO3/wkYQSKdI108pXH7Aue0e/ZOwgEEX1N6OaPQn7AmAB4uq1h+ffw+r
+RKNHqnsCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCZmj+pgRsN6HpoICawK3XXNAmi
+cgfQkailX9akIjD3xSCwEQx4nG6tZjTz30u4NoSffW7pch58SxuZQDqW5NsJcQNq
+Ngo/dMoqqpXdi2/0BYEcJ8pjsngrFm+fM2BnyGpXH7aWuKsWjVFGlWlF+yi8I35Q
+8wFJt2Z/XGA7WWDjvw==
+-----END CERTIFICATE-----",
+accounts: "VISA, American Express, Square, Amazon, Google",
+preferred_account: "Square"}
+
+{email: "daniel.chiang@gmail.com",
+type: "payer",
+cert: "-----BEGIN CERTIFICATE-----
+MIIBuTCCASKgAwIBAgIQNdNhtuV5GbNHYZsf+LvM0zANBgkqhkiG9w0BAQUFADAb
+MRkwFwYDVQQDExBFZGlkZXYgU21va2VUZXN0MB4XDTA4MTExMjE5NTEzNVoXDTM5
+MTIzMTIzNTk1OVowGzEZMBcGA1UEAxMQRWRpZGV2IFNtb2tlVGVzdDCBnzANBgkq
+hkiG9w0BAQEFAAOBjQAwgYkCgYEAm6zGzqxejwswWTNLcSsa7P8xqODspX9VQBuq
+5W1RoTgQ0LNR64+7ywLjH8+wrb/lB6QV7s2SFUiWDeduVesvMJkWtZ5zzQyl3iUa
+CBpT4S5AaO3/wkYQSKdI108pXH7Aue0e/ZOwgEEX1N6OaPQn7AmAB4uq1h+ffw+r
+RKNHqnsCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCZmj+pgRsN6HpoICawK3XXNAmi
+cgfQkailX9akIjD3xSCwEQx4nG6tZjTz30u4NoSffW7pch58SxuZQDqW5NsJcQNq
+Ngo/dMoqqpXdi2/0BYEcJ8pjsngrFm+fM2BnyGpXH7aWuKsWjVFGlWlF+yi8I35Q
+8wFJt2Z/XGA7WWDjvw==
+-----END CERTIFICATE-----",
+accounts: "Paypal, VISA, Square, Amazon, Google, Circle (Bitcoin)",
+preferred_account: "Paypal"}
+
+{email: "payments@apple.com",
+type: "business",
+cert: "-----BEGIN CERTIFICATE-----
+MIIBuTCCASKgAwIBAgIQNdNhtuV5GbNHYZsf+LvM0zANBgkqhkiG9w0BAQUFADAb
+MRkwFwYDVQQDExBFZGlkZXYgU21va2VUZXN0MB4XDTA4MTExMjE5NTEzNVoXDTM5
+MTIzMTIzNTk1OVowGzEZMBcGA1UEAxMQRWRpZGV2IFNtb2tlVGVzdDCBnzANBgkq
+hkiG9w0BAQEFAAOBjQAwgYkCgYEAm6zGzqxejwswWTNLcSsa7P8xqODspX9VQBuq
+5W1RoTgQ0LNR64+7ywLjH8+wrb/lB6QV7s2SFUiWDeduVesvMJkWtZ5zzQyl3iUa
+CBpT4S5AaO3/wkYQSKdI108pXH7Aue0e/ZOwgEEX1N6OaPQn7AmAB4uq1h+ffw+r
+RKNHqnsCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCZmj+pgRsN6HpoICawK3XXNAmi
+cgfQkailX9akIjD3xSCwEQx4nG6tZjTz30u4NoSffW7pch58SxuZQDqW5NsJcQNq
+Ngo/dMoqqpXdi2/0BYEcJ8pjsngrFm+fM2BnyGpXH7aWuKsWjVFGlWlF+yi8I35Q
+8wFJt2Z/XGA7WWDjvw==
+-----END CERTIFICATE-----",
+accounts: "Paypal, VISA, MasterCard, American Express, Discover, AppleID, Circle (Bitcoin)",
+preferred_account: "AppleID"}
+
+
+
