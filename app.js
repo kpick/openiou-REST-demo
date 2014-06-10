@@ -50,16 +50,23 @@ serverRest.use(restify.CORS());
 // -----------------------------------------------------------------------------
 serverRest.get({path : '/' , version : '0.0.1'} , base);
 
+// Gets the information on a specific user
 serverRest.post({path : informationPath +'/:uid' , version : '0.0.1'} , information);
 serverRest.get({path : informationPath +'/:uid' , version : '0.0.1'} , information);
 
+// Gets the purchases a specific user made (payer)
 serverRest.post({path : purchasesPath +'/:uid' , version : '0.0.1'} , purchases);
 serverRest.get({path : purchasesPath +'/:uid' , version : '0.0.1'} , purchases);
 
+// Gets the sales made to a specific (payee)
 serverRest.post({path : salesPath +'/:uid' , version : '0.0.1'} , sales);
 serverRest.get({path : salesPath +'/:uid' , version : '0.0.1'} , sales);
 
+// Authorizes a transaction
 serverRest.post({path : authorizePath +'/:payer/:payee' , version : '0.0.1'} , authorize);
+
+// Tests if Service is running
+serverRest.get({path : statusPath, version : '0.0.1'} , status);
 
 // DEBUGGING
 serverRest.get({path : debugUsersPath , version : '0.0.1'} , debugUsers);
@@ -131,6 +138,12 @@ function authorize (req, res , next) {
         }
     });
 }
+
+function status (req, res , next) {
+    var stat = {status: "active"};
+    res.send(200 , stat);
+}
+
 
 
 // -----------------------------------------------------------------------------
