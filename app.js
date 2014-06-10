@@ -20,6 +20,7 @@ var debugTxnsPath = '/debugtxns';
 
 // Server Address/Port
 var addr = process.env.IP;
+var addrDB="mongodb://heroku:aV_VFpl7Asrj5x1edZMdqUZT7is1pK-LVG4FkF_Kig91HsregNy80kIcACpeerjdTyOvrsPMU2DHfVXlBAZrNw@kahana.mongohq.com:10030/app26199420";
 var port = process.env.PORT;
 
 // -----------------------------------------------------------------------------
@@ -27,8 +28,9 @@ var port = process.env.PORT;
 // -----------------------------------------------------------------------------
 
 // Mongo Setup
-var databaseUrl = addr + ':27017/openiou';
-var collections = ["users", "transactions"]
+//var databaseUrl = addr + ':27017/openiou';
+var databaseUrl = addrDB;
+var collections = ["users", "transactions"];
 var db = mongojs.connect(databaseUrl, collections);
 console.log("Mongo listening at " + databaseUrl);
 

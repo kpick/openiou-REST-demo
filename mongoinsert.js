@@ -1,7 +1,11 @@
-var addr = process.env.IP;
+var addr = process.env.MONGOHQ_URL;
+//var addr="mongodb://heroku:aV_VFpl7Asrj5x1edZMdqUZT7is1pK-LVG4FkF_Kig91HsregNy80kIcACpeerjdTyOvrsPMU2DHfVXlBAZrNw@kahana.mongohq.com:10030/app26199420";
 var mongojs = require("mongojs");
 
-var databaseUrl = addr + ':27017/openiou';
+console.log(addr);
+
+//var databaseUrl = addr + ':27017/openiou';
+var databaseUrl = addr;
 var collections = ["users", "transactions"]
 var db = mongojs.connect(databaseUrl, collections);
 /*
@@ -49,10 +53,11 @@ db.users.save({
   else console.log("User saved");
 });
 */
+/*
 db.transactions.save({
     date: "2014-06-01T17:59:07.849Z",
-    payer : "539617a1decf51daabc9ed9e",
-    payee: "539617a1decf51daabc9eda1",
+    payer : "53978902a4fd9200003f3582",
+    payee: "53978902a4fd9200003f3585",
     approval: "ZZjkshjds9017727",
     metadata: "Location: Natick Store, Amount: 592.24, Currency: USD"
     }
@@ -63,8 +68,8 @@ db.transactions.save({
 
 db.transactions.save({
     date: "2014-06-02T17:59:07.849Z",
-    payer : "539617a1decf51daabc9eda0",
-    payee: "539617a1decf51daabc9eda1",
+    payer : "53978902a4fd9200003f3583",
+    payee: "53978902a4fd9200003f3585",
     approval: "ZZjkshjds901727",
     metadata: "Location: Natick Store, Amount: 1992.24, Currency: USD"
     }
@@ -72,4 +77,11 @@ db.transactions.save({
   if( err || !saved ) console.log("Data not saved");
   else console.log("Data saved");
 });
+*/
 
+//db.users.remove({_id : mongojs.ObjectId("53978a07cbe268000000000d")});
+
+// READ
+db.users.find().limit(20).toArray(function(err, results){
+    console.log(results);
+});
