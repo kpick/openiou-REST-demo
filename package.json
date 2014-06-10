@@ -1,0 +1,13 @@
+{
+  "name": "openiou-demo",
+  "version": "0.0.1",
+  "description": "Demo for OpenIOU's mobile app.",
+  "main": "app.js",
+  "repository": "git@github.com:kpick/openiou-demo.git",
+  "author": "Ken Pickering <ken.pickering@gmail.com>",
+  "dependencies": {
+    "mongojs": "~0.13.0",
+    "restify": "~2.8.1",
+    "socket.io": "~0.9.14"
+  }
+}
