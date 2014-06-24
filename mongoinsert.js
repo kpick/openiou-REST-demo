@@ -1,5 +1,5 @@
-var addr = process.env.MONGOHQ_URL;
-//var addr="mongodb://heroku:aV_VFpl7Asrj5x1edZMdqUZT7is1pK-LVG4FkF_Kig91HsregNy80kIcACpeerjdTyOvrsPMU2DHfVXlBAZrNw@kahana.mongohq.com:10030/app26199420";
+//var addr = process.env.MONGOHQ_URL;
+var addr="mongodb://heroku:aV_VFpl7Asrj5x1edZMdqUZT7is1pK-LVG4FkF_Kig91HsregNy80kIcACpeerjdTyOvrsPMU2DHfVXlBAZrNw@kahana.mongohq.com:10030/app26199420";
 var mongojs = require("mongojs");
 
 console.log(addr);
@@ -79,9 +79,11 @@ db.transactions.save({
 });
 */
 
-//db.users.remove({_id : mongojs.ObjectId("53978a07cbe268000000000d")});
+//db.transactions.remove({_id : mongojs.ObjectId("53978e1b8af3bc00001fa941")});
+//db.transactions.remove({_id : mongojs.ObjectId("53978c618011f3000070d965")});
+//db.transactions.remove({_id : mongojs.ObjectId("53978c618011f3000070d964")});
 
 // READ
-db.users.find().limit(20).toArray(function(err, results){
+db.transactions.find().limit(20).toArray(function(err, results){
     console.log(results);
 });

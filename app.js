@@ -127,7 +127,7 @@ function authorize (req, res , next) {
     txn.payer = req.params.payer;
     txn.payee = req.params.payee;
     txn.approval = makeid(15);
-    txn.metadata = "Location: Natick Store, Amount: 592.24, Currency: USD";
+    txn.metadata = "{ location: 'Burlington Store', amount: '55.24', currency: 'USD', display_name: 'Apple Store', payment_provider: 'AppleID' }";
  
     db.transactions.save(txn , function(err , success){
         console.log('Response success '+success);
