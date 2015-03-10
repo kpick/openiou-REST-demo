@@ -1,5 +1,7 @@
 //var addr = process.env.MONGOHQ_URL;
-var addr="mongodb://heroku:aV_VFpl7Asrj5x1edZMdqUZT7is1pK-LVG4FkF_Kig91HsregNy80kIcACpeerjdTyOvrsPMU2DHfVXlBAZrNw@kahana.mongohq.com:10030/app26199420";
+
+//MONGODB ADDRESS
+var addr="";
 var mongojs = require("mongojs");
 
 console.log(addr);
@@ -8,7 +10,7 @@ console.log(addr);
 var databaseUrl = addr;
 var collections = ["users", "transactions"]
 var db = mongojs.connect(databaseUrl, collections);
-/*
+
 db.users.save({
     email: "ken.pickering@gmail.com",
     type: "payer", 
@@ -52,8 +54,7 @@ db.users.save({
   if( err || !saved ) console.log("User not saved");
   else console.log("User saved");
 });
-*/
-/*
+
 db.transactions.save({
     date: "2014-06-01T17:59:07.849Z",
     payer : "53978902a4fd9200003f3582",
@@ -77,7 +78,6 @@ db.transactions.save({
   if( err || !saved ) console.log("Data not saved");
   else console.log("Data saved");
 });
-*/
 
 //db.transactions.remove({_id : mongojs.ObjectId("53978e1b8af3bc00001fa941")});
 //db.transactions.remove({_id : mongojs.ObjectId("53978c618011f3000070d965")});

@@ -20,7 +20,8 @@ var debugTxnsPath = '/debugtxns';
 
 // Server Address/Port
 var addr = process.env.IP;
-var addrDB="mongodb://heroku:aV_VFpl7Asrj5x1edZMdqUZT7is1pK-LVG4FkF_Kig91HsregNy80kIcACpeerjdTyOvrsPMU2DHfVXlBAZrNw@kahana.mongohq.com:10030/app26199420";
+//MONGODB Address
+var addrDB="";
 var port = process.env.PORT;
 
 // -----------------------------------------------------------------------------
